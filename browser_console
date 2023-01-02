@@ -1,0 +1,388 @@
+Console was cleared
+undefined
+
+console.log("Hello World!")
+VM243:2 Hello World!
+undefined
+let num = 5
+var mystr = "John"
+console.log(num)
+console.log(mystr)
+VM247:3 5
+VM247:4 John
+undefined
+const pi_val = 3.147
+console.log(pi_val)
+VM251:2 3.147
+undefined
+function printMyInput(user_input) {
+    console.log("The parameter passed is " + user_input)
+}
+undefined
+printMyInput(9)
+printMyInput("John")
+VM255:2 The parameter passed is 9
+VM255:2 The parameter passed is John
+undefined
+let printMyInputES6 = (user_input) => {
+    console.log(user_input)
+}
+undefined
+printMyInputES6(9)
+printMyInputES6("John")
+VM263:2 9
+VM263:2 John
+undefined
+let printMyInputES6Short = user_input => console.log(user_input)
+undefined
+printMyInputES6Short(9)
+printMyInputES6Short("John")
+VM271:1 9
+VM271:1 John
+undefined
+console.log("5 + 3 = ", 5 + 3)
+console.log("7 - 3 = ", 7 - 3)
+console.log("8 * 2 = ", 8 * 2)
+console.log("27 / 3 = ", 27 / 3)
+console.log("4 to the power of 3 = ", 4 ** 3)
+console.log("19 mod 4 = ", 19 % 4)
+VM279:1 5 + 3 =  8
+VM279:2 7 - 3 =  4
+VM279:3 8 * 2 =  16
+VM279:4 27 / 3 =  9
+VM279:5 4 to the power of 3 =  64
+VM279:6 19 mod 4 =  3
+undefined
+console.log("5 + 3 = ", 5 + 3)
+console.log("5 + \"3\" = ", 5 + "3")
+console.log("5 + 5 + \"3\" = ", 5 + 5 + "3")
+console.log("\"3\" + 5 + 5 = ", "3" + 5 + 5)
+console.log("5 + 5 + \"3\" + 5 = ", 5 + 5 + "3" + 5)
+VM283:1 5 + 3 =  8
+VM283:2 5 + "3" =  53
+VM283:3 5 + 5 + "3" =  103
+VM283:4 "3" + 5 + 5 =  355
+VM283:5 5 + 5 + "3" + 5 =  1035
+undefined
+//= operator is used to assign value on the right to the variable on left
++= operator is used to increment the value stored in the left operand by the value of the right operand and store it back to the left operand (the same as writing tmp = tmp + val where tmp is a variable and val is some arbitrary value)
+-= operator is used to decrement the value stored in the left operand by the value of the right operand and store it back to the left operand (the same as writing tmp = tmp - val where tmp is a variable and val is some arbitrary value)
+*= operator is used to multiply the value stored in the left operand by the value of the right operand and store it back to the left operand (the same as writing tmp = tmp * val where tmp is a variable and val is some arbitrary value)
+/= operator is used to divide the value stored in the left operand by the value of the right operand and store it back to the left operand (the same as writing tmp = tmp / val where tmp is a variable and val is some arbitrary value)
+**= operator is used to raise the value stored in the left operand to the power value of the right operand and store it back to the left operand (the same as writing tmp = tmp ** val where tmp is a variable and val is some arbitrary value)
+%= operator is used to get modulus of the value stored in the left operand by value of the right operand and store it back to the left operand (the same as writing tmp = tmp % val where tmp is a variable and val is some arbitrary value)
+VM291:2 Uncaught SyntaxError: Unexpected token '+='
+x = 5
+console.log("Old value of x: ", x)
+x += 3
+console.log("New value of x: ", x)
+y = 5
+console.log("Old value of y: ", y)
+y -= 3
+console.log("New value of y: ", y)
+a = 6
+console.log("Old value of a: ", a)
+a *= 3
+console.log("New value of a: ", a)
+b = 6
+console.log("Old value of b: ", b)
+b /= 3
+console.log("New value of b: ", b)
+c = 6
+console.log("Old value of c: ", c)
+c %= 3
+console.log("New value of c: ", c)
+d = 6
+console.log("Old value of d: ", d)
+d **= 3
+console.log("New value of d: ", d)
+VM295:2 Old value of x:  5
+VM295:4 New value of x:  8
+VM295:6 Old value of y:  5
+VM295:8 New value of y:  2
+VM295:10 Old value of a:  6
+VM295:12 New value of a:  18
+VM295:14 Old value of b:  6
+VM295:16 New value of b:  2
+VM295:18 Old value of c:  6
+VM295:20 New value of c:  0
+VM295:22 Old value of d:  6
+VM295:24 New value of d:  216
+undefined
+//Checking equality of 5 (number type) and 5 (string type)
+console.log("5=='5' ", 5=='5')
+console.log("5==='5' ", 5==='5')
+console.log("5===5 ", 5===5)
+console.log("5 != 5 ", 5 !== 5)
+console.log("5 != 6 ", 5 != 6)
+console.log("5 != '5' ", 5 !== '5')
+console.log("5 > 2 ", 5 > 2)
+console.log("5 > 7 ", 5 > 7)
+console.log("5 > 5 ", 5 > 5)
+console.log("5 < 7 ", 5 < 7)
+console.log("5 < 2 ", 5 < 2)
+console.log("5 < 5 ", 5 < 5)
+console.log("5 >= 5 ", 5 >= 5 )
+console.log("5 <= 5 ", 5 <= 5 )
+VM299:2 5=='5'  true
+VM299:3 5==='5'  false
+VM299:4 5===5  true
+VM299:5 5 != 5  false
+VM299:6 5 != 6  true
+VM299:7 5 != '5'  true
+VM299:8 5 > 2  true
+VM299:9 5 > 7  false
+VM299:10 5 > 5  false
+VM299:11 5 < 7  true
+VM299:12 5 < 2  false
+VM299:13 5 < 5  false
+VM299:14 5 >= 5  true
+VM299:15 5 <= 5  true
+undefined
+var raining = false
+var cloudy = true
+console.log("It is raining: ", raining)
+console.log("It is cloudy: ", cloudy)
+console.log("It is raining AND cloudy: ", raining && cloudy)
+console.log("It is raining OR cloudy: ", raining || cloudy)
+console.log("It is not raining: ", !raining)
+console.log("It is not cloudy: ", !cloudy)
+VM303:3 It is raining:  false
+VM303:4 It is cloudy:  true
+VM303:5 It is raining AND cloudy:  false
+VM303:6 It is raining OR cloudy:  true
+VM303:7 It is not raining:  true
+VM303:8 It is not cloudy:  false
+undefined
+var chocolate = true
+var candy = false
+console.log("There is chocolate: ", chocolate)
+console.log("There is candy: ", candy)
+console.log("There is candy AND chocolate: ", chocolate && candy, " -- Only candy is evaluated")
+console.log("There is chocolate OR candy: ", chocolate || candy, " -- Only chocolate is evaluated")
+VM307:3 There is chocolate:  true
+VM307:4 There is candy:  false
+VM307:5 There is candy AND chocolate:  false  -- Only candy is evaluated
+VM307:6 There is chocolate OR candy:  true  -- Only chocolate is evaluated
+undefined
+//Accept a input from the user. If it is a number, print the multiplication table for the number. Else print the input and the length of the input.
+let user_input = prompt('Enter a value');
+//Check if the user did not input anything
+if (!user_input) {
+    console.log("You did not input anything")
+}
+//Check if the user input is not a number
+else if (isNaN(user_input)) {
+    console.log("Your input is ", user_input)
+    console.log("The length of your input is ", user_input.length)
+} 
+//The only option remaining is that the input is a number
+else {
+    console.log(user_input, " X 1 = ", user_input*1)
+    console.log(user_input, " X 2 = ", user_input*2)
+    console.log(user_input, " X 3 = ", user_input*3)
+    console.log(user_input, " X 4 = ", user_input*4)
+    console.log(user_input, " X 5 = ", user_input*5)
+    console.log(user_input, " X 6 = ", user_input*6)
+    console.log(user_input, " X 7 = ", user_input*7)
+    console.log(user_input, " X 8 = ", user_input*8)
+    console.log(user_input, " X 9 = ", user_input*9)
+    console.log(user_input, " X 10 = ", user_input*10)
+}
+VM311:5 You did not input anything
+undefined
+//Accept a input from the user. If it is a number, print the multiplication table for the number. Else print the input and the length of the input.
+let user_input = prompt('Enter a value');
+//Check if the user did not input anything
+if (!user_input) {
+    console.log("You did not input anything")
+}
+//Check if the user input is not a number
+else if (isNaN(user_input)) {
+    console.log("Your input is ", user_input)
+    console.log("The length of your input is ", user_input.length)
+} 
+//The only option remaining is that the input is a number
+else {
+    console.log(user_input, " X 1 = ", user_input*1)
+    console.log(user_input, " X 2 = ", user_input*2)
+    console.log(user_input, " X 3 = ", user_input*3)
+    console.log(user_input, " X 4 = ", user_input*4)
+    console.log(user_input, " X 5 = ", user_input*5)
+    console.log(user_input, " X 6 = ", user_input*6)
+    console.log(user_input, " X 7 = ", user_input*7)
+    console.log(user_input, " X 8 = ", user_input*8)
+    console.log(user_input, " X 9 = ", user_input*9)
+    console.log(user_input, " X 10 = ", user_input*10)
+}
+VM315:14 3  X 1 =  3
+VM315:15 3  X 2 =  6
+VM315:16 3  X 3 =  9
+VM315:17 3  X 4 =  12
+VM315:18 3  X 5 =  15
+VM315:19 3  X 6 =  18
+VM315:20 3  X 7 =  21
+VM315:21 3  X 8 =  24
+VM315:22 3  X 9 =  27
+VM315:23 3  X 10 =  30
+undefined
+//input was 3
+undefined
+let user_input = prompt('Enter a number between 1 to 7');
+//Using logical OR operator to check if the input is a number and it is between 1 to 7
+if(isNaN(user_input) || user_input< 1 || user_input>7) {
+    console.log("Invalid input")
+} else {
+    user_input = parseInt(user_input)
+    switch(user_input){
+        case 1: console.log("Sunday"); break;
+        case 2: console.log("Monday"); break;
+        case 3: console.log("Tuesday"); break;
+        case 4: console.log("Wednesday"); break;
+        case 5: console.log("Thursday"); break;
+        case 6: console.log("Friday"); break;
+        case 7: console.log("Saturday"); break;
+        default: console.log("Invalid entry");
+    }
+}
+VM365:12 Thursday
+undefined
+//input equal 5
+
+undefined
+Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+//Accept a input from the user. If it is a number print the multiplication table for the number. 
+let user_input = prompt('Enter a number');
+//Check if the user input is a number
+if(!isNaN(user_input)) {
+    //Using for loop for the repetitive statement
+    for (let i=0; i<10; i++) {
+        console.log(user_input, " X ", i, " = ", user_input*i)
+    }
+}
+VM375:7 0  X  0  =  0
+VM375:7 0  X  1  =  0
+VM375:7 0  X  2  =  0
+VM375:7 0  X  3  =  0
+VM375:7 0  X  4  =  0
+VM375:7 0  X  5  =  0
+VM375:7 0  X  6  =  0
+VM375:7 0  X  7  =  0
+VM375:7 0  X  8  =  0
+VM375:7 0  X  9  =  0
+undefined
+//input was 0
+undefined
+//Accept a input from the user. If it is a number print the multiplication table for the number. 
+let user_input = prompt('Enter a number');
+//Check if the user input is a number
+if(!isNaN(user_input)) {
+    //Using for loop for the repetitive statement
+    for (let i=0; i<10; i++) {
+        console.log(user_input, " X ", i, " = ", user_input*i)
+    }
+}
+VM423:7 5  X  0  =  0
+VM423:7 5  X  1  =  5
+VM423:7 5  X  2  =  10
+VM423:7 5  X  3  =  15
+VM423:7 5  X  4  =  20
+VM423:7 5  X  5  =  25
+VM423:7 5  X  6  =  30
+VM423:7 5  X  7  =  35
+VM423:7 5  X  8  =  40
+VM423:7 5  X  9  =  45
+undefined
+//input was 5
+undefined
+//The code below is to find the length of the words the user is entering. The loop will go on and on until the user chooses not to continue by pressing 'n'
+let do_more = true
+while(do_more) {
+    //Accept a input from the user. 
+    let user_input = prompt('Enter a word');
+    //Check if the user input is not a number and then print the length of the input
+    if(isNaN(user_input)) {
+        console.log("Length of the word you entered is " + user_input.length)
+    } else {
+        console.log("You entered a number. Only words are allowed")
+    }
+    let should_continue = prompt("Do you want to continue. Press n to stop")
+    
+    if(should_continue === "n") {
+        do_more = false
+    }
+}
+2VM470:10 You entered a number. Only words are allowed
+false
+//input was 5
+undefined
+//pressed n to stop
+undefined
+//The code below is to find the length of the words the user is entering. The loop will go on and on until the user chooses not to continue by pressing 'n'
+let do_more = true
+while(do_more) {
+    //Accept a input from the user. 
+    let user_input = prompt('Enter a word');
+    //Check if the user input is not a number and then print the length of the input
+    if(isNaN(user_input)) {
+        console.log("Length of the word you entered is " + user_input.length)
+    } else {
+        console.log("You entered a number. Only words are allowed")
+    }
+    let should_continue = prompt("Do you want to continue. Press n to stop")
+    
+    if(should_continue === "n") {
+        do_more = false
+    }
+}
+VM561:8 Length of the word you entered is 5
+false
+//input was angel
+undefined
+//pressed n to stop
+undefined
+let myArray = ["Jack","Jill",4,5,true,"John"]
+console.log(myArray[0]);
+console.log(myArray[5]);
+VM689:2 Jack
+VM689:3 John
+undefined
+let myArray = ["Jack","Jill",4,5,true,"John"]
+myArray.forEach(element => {
+    console.log(element)
+})
+VM693:3 Jack
+VM693:3 Jill
+VM693:3 4
+VM693:3 5
+VM693:3 true
+VM693:3 John
+undefined
+//the command above:To iterate through arrays, there is a special type of for loop, forEach, which gets executed for each value in the given array.
+undefined
+//To find the index position and the value, we can use the generic Object.entries method, which can be used with all collection objects. This maps each index position to the value.
+undefined
+let myArray = ["Jack","Jill",4,5,true,"John"]
+for (const [index, value] of Object.entries(myArray)) {
+  console.log(index, " - ", value);
+}
+VM754:3 0  -  Jack
+VM754:3 1  -  Jill
+VM754:3 2  -  4
+VM754:3 3  -  5
+VM754:3 4  -  true
+VM754:3 5  -  John
+undefined
+//Map object maps a key to a value. The keys have to be unique. The values can be string, int, float, or any other valid JavaScript datatype. An empty Map object can be create with the new keyword.
+undefined
+let myMap = new Map();
+//Add a key-value pair to the map, with a key of "name" and a value of "John". 
+myMap.set("name", "John")
+//Add another key-value pair to the map, with a key of "age" and a value of 22.
+myMap.set("age", 22)
+myMap.forEach((val,key) => {
+    console.log(key, " - ", val)
+})
+VM768:7 name  -  John
+VM768:7 age  -  22
+undefined
